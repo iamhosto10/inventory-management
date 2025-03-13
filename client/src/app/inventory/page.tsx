@@ -4,7 +4,7 @@ import { useGetProductsQuery } from "@/state/api";
 import Header from "@/app/(components)/Header";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import CircularProgress from "@mui/material/CircularProgress";
-import { useAppSelector } from "../redux";
+// import { useAppSelector } from "../redux";
 
 const columns: GridColDef[] = [
   {
@@ -38,7 +38,7 @@ const columns: GridColDef[] = [
 
 const Inventory = () => {
   const { data: products, isError, isLoading } = useGetProductsQuery();
-  const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
+  // const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
 
   if (isLoading) {
     return (
