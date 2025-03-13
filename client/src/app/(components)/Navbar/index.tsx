@@ -72,6 +72,7 @@ const Navbar = () => {
               width={50}
               height={50}
               className="rounded-full h-full object-cover"
+              unoptimized={true}
             />
             <span className="font-semibold">Gerardo</span>
           </div>
